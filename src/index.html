@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Jersey+15&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="mb-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Vamos Jogar o jogo da velha?</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="placar">
+                    <p> <span class="material-symbols-outlined">person</span> Jogador X: <span class="resultados" id="placar-x">0</span> vitórias</p>
+                    <p><span class="material-symbols-outlined">person</span>Jogador O: <span class="resultados" id="placar-o">0</span> vitórias</p>
+                    <p><span class="material-symbols-outlined"> handshake </span>Empates: <span class="resultados" id="placar-empate">0</span></p>
+                    <p id="vez-de-jogar"></p>
+                    <p id="mensagem-vitoria"></p>
+                    <p></p><button type="button" class="btn btn-primary" id="novo-jogo">Novo Jogo</button></p>
+                </div>
+                <div class="sequenciaDeJogada">
+                    <p id="vez-de-jogar"></p>
+                    <p id="mensagem-vitoria"></p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 d-flex justify-content-center">
+                <div class="jogo">
+                    <div class="tabuleiro"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="@@ENDERECO_DO_JS"></script>
+</body>
+</html>
